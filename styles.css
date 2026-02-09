@@ -10,7 +10,7 @@
   --green-dark: #0e2a1c;
   --gold: #f2c24e;
   --border: rgba(17, 24, 17, 0.08);
-  --shadow: 0 16px 50px rgba(16, 24, 16, 0.08);
+  --shadow: 0 18px 60px rgba(16, 24, 16, 0.08);
   --radius: 18px;
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
   --sans: "Sora", "Trebuchet MS", sans-serif;
@@ -29,9 +29,9 @@ body {
 }
 
 .page {
-  width: min(1120px, 92vw);
+  width: min(980px, 90vw);
   margin: 0 auto;
-  padding: 40px 0 72px;
+  padding: 56px 0 88px;
 }
 
 .site-header {
@@ -39,7 +39,7 @@ body {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 24px;
-  padding-bottom: 32px;
+  padding-bottom: 40px;
 }
 
 .brand {
@@ -134,7 +134,6 @@ body {
 }
 
 .kicker {
-  margin: 18px 0 0;
   font-size: 0.95rem;
   color: var(--green-dark);
   font-weight: 600;
@@ -142,18 +141,31 @@ body {
 
 .hero {
   display: grid;
-  gap: 20px;
-  padding: 24px 0 48px;
+  gap: 28px;
+  padding: 32px 0 68px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  display: grid;
+  gap: 16px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.hero-text > * {
+  margin: 0;
 }
 
 .hero h1 {
-  font-size: clamp(2.2rem, 3vw, 3.2rem);
-  margin: 16px 0 14px;
+  font-size: clamp(2.3rem, 3.2vw, 3.3rem);
+  line-height: 1.08;
 }
 
 .lead {
   font-size: 1.02rem;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--muted);
 }
 
@@ -161,15 +173,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 16px;
 }
 
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 24px;
+  padding: 26px;
   box-shadow: var(--shadow);
+}
+
+.hero-card {
+  max-width: 760px;
+  margin: 0 auto;
 }
 
 .hero-card h2 {
@@ -179,7 +195,7 @@ body {
 .credit-row {
   display: flex;
   justify-content: space-between;
-  padding: 8px 0;
+  padding: 10px 0;
   border-bottom: 1px dashed rgba(17, 24, 17, 0.12);
   font-family: var(--mono);
   font-size: 0.9rem;
@@ -196,9 +212,9 @@ body {
 
 .terminal-compare {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 12px;
-  margin-top: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
 }
 
 .terminal {
@@ -242,12 +258,16 @@ body {
 }
 
 .section {
-  padding: 48px 0;
+  padding: 72px 0;
+}
+
+.section-heading {
+  margin-bottom: 28px;
 }
 
 .section-heading h2 {
-  margin: 0 0 10px;
-  font-size: clamp(1.8rem, 2.4vw, 2.4rem);
+  margin: 0 0 12px;
+  font-size: clamp(1.9rem, 2.6vw, 2.5rem);
 }
 
 .section-heading p {
@@ -257,13 +277,13 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
 }
 
 .tag {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 12px;
   font-family: var(--mono);
   font-size: 0.75rem;
   color: var(--green-dark);
@@ -272,7 +292,7 @@ body {
 .screenshot-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
+  gap: 22px;
 }
 
 .screenshot img {
@@ -289,17 +309,17 @@ body {
 
 .pricing {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
   align-items: center;
 }
 
 .price-panel {
   background: var(--surface-alt);
   border-radius: 16px;
-  padding: 18px;
+  padding: 20px;
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .price {
@@ -312,7 +332,7 @@ body {
   padding-left: 18px;
   color: var(--muted);
   display: grid;
-  gap: 6px;
+  gap: 8px;
 }
 
 .fineprint {
@@ -324,9 +344,9 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 40px;
-  padding-top: 18px;
+  gap: 12px;
+  margin-top: 56px;
+  padding-top: 24px;
   border-top: 1px solid var(--border);
   color: rgba(17, 24, 17, 0.5);
   font-size: 0.85rem;
@@ -367,13 +387,13 @@ body {
 }
 
 .address-block {
-  margin: 16px 0;
-  padding: 12px 14px;
+  margin: 18px 0;
+  padding: 14px 16px;
   border-radius: 12px;
   background: var(--surface-alt);
   border: 1px dashed rgba(17, 24, 17, 0.18);
   display: grid;
-  gap: 8px;
+  gap: 10px;
   font-family: var(--mono);
 }
 
