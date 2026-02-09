@@ -5,31 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Yieldseeker Pro — Early Access</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:," />
   </head>
   <body>
     <div class="page">
       <header class="site-header">
         <div class="brand">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 32 32" role="img" aria-label="Yieldseeker">
-              <path
-                d="M16 3c3.2 2.7 5.2 6.4 5.2 10.5 0 5.8-4.7 10.5-10.5 10.5-1.9 0-3.7-.5-5.2-1.4 2.5 3.8 6.8 6.4 11.7 6.4 7.6 0 13.8-6.2 13.8-13.8C31 8.8 24.3 3 16 3Z"
-                fill="#23e27c"
-              />
-              <path
-                d="M6.2 10.4c2.7 1.8 5.7 2.8 9.2 3.1-.8 3.8-3.7 7-7.3 8.5C4.5 19.6 3 16.8 3 13.7c0-1.2.2-2.3.6-3.3 1 0 1.7.1 2.6.0Z"
-                fill="#0f2d1d"
-              />
-            </svg>
-          </span>
-          <span class="brand-name">yieldseeker</span>
+          <img class="brand-logo" src="assets/logo.png" alt="Yieldseeker" />
         </div>
         <nav class="nav">
           <a href="#features">Features</a>
-          <a href="#preview">Preview</a>
           <a href="#pricing">Pricing</a>
         </nav>
-        <button class="button primary" type="button" data-open-dialog>Get Pro Early</button>
+        <button class="button green" type="button" data-open-dialog>Get Pro Early</button>
       </header>
 
       <main>
@@ -50,91 +38,62 @@
             <p class="fineprint">If for some reason we can’t make it, your money will be returned.</p>
           </div>
 
-          <div class="card hero-card">
-            <h2>What credits unlock</h2>
-            <div class="credit-row">
-              <span>Base Pro bundle</span>
-              <strong>1,000 CR</strong>
-            </div>
-            <div class="credit-row highlight">
-              <span>Early access bonus</span>
-              <strong>2,000 CR</strong>
-            </div>
-            <p class="muted">Spend credits on extra swaps, APY simulations, advanced Discuss, and boosted points.</p>
-          </div>
+        </section>
 
-          <div class="card hero-card">
-            <h2>Pro looks different</h2>
-            <p class="muted">The console switches to gold with a PRO badge.</p>
-            <div class="terminal-compare">
-              <div class="terminal free">
-                <div class="terminal-top">Free console</div>
-                <div class="terminal-body">
-                  <span>daily swaps: 1</span>
-                  <span>discuss: standard</span>
-                </div>
-              </div>
-              <div class="terminal pro">
-                <div class="terminal-top">Pro console</div>
-                <div class="terminal-body">
-                  <span>daily swaps: multi</span>
-                  <span>discuss: advanced</span>
-                  <span class="pro-badge">PRO</span>
-                </div>
-              </div>
+        <section class="app-showcase">
+          <div class="showcase-grid">
+            <div class="showcase-frame">
+              <img src="assets/ys-01.png" alt="Yieldseeker agent dashboard — yield chart and APY stats" />
+            </div>
+            <div class="showcase-frame">
+              <img src="assets/ys-02.png" alt="Yieldseeker agent — holdings, funding, and recent activity" />
             </div>
           </div>
+          <p class="showcase-caption">The Yieldseeker agent dashboard — track yield, manage holdings, and automate swaps.</p>
         </section>
 
         <section id="features" class="section">
           <div class="section-heading">
-            <h2>Bonus features you can spend credits on.</h2>
+            <h2>What you can spend credits on.</h2>
             <p>Each extra swap costs 1 credit. Everything else is credit-based as it launches.</p>
           </div>
-          <div class="grid">
-            <div class="card">
-              <h3>Custom agent swaps</h3>
-              <p>Go beyond one swap per day. Each extra swap uses 1 credit.</p>
-              <span class="tag">1 CR / swap</span>
-            </div>
-            <div class="card">
-              <h3>Theoretical APY lab</h3>
-              <p>Test and preview a theoretical APY for custom agent settings.</p>
-              <span class="tag">Simulation credits</span>
-            </div>
-            <div class="card">
-              <h3>Advanced Discuss</h3>
-              <p>Ask deeper, more complex questions inside the Discuss tab.</p>
-              <span class="tag">Complex answers</span>
-            </div>
-            <div class="card">
-              <h3>Boosted points</h3>
-              <p>Earn boosted points on Pro so you climb the leaderboard faster.</p>
-              <span class="tag">Pro multiplier</span>
-            </div>
-            <div class="card">
-              <h3>More to come</h3>
-              <p>New Pro drops will unlock with credits as we ship them.</p>
-              <span class="tag">Rolling updates</span>
-            </div>
-          </div>
-        </section>
-
-        <section id="preview" class="section">
-          <div class="section-heading">
-            <h2>Preview the Yieldseeker experience.</h2>
-            <p>Use these real screenshots to show the app today, plus the Pro look tomorrow.</p>
-          </div>
-          <div class="screenshot-grid">
-            <figure class="screenshot card">
-              <img src="assets/screenshots/overview.svg" alt="Yieldseeker overview screen" />
-              <figcaption>Overview dashboard with yield tracking.</figcaption>
-            </figure>
-            <figure class="screenshot card">
-              <img src="assets/screenshots/activity.svg" alt="Yieldseeker activity screen" />
-              <figcaption>Funding + activity timeline.</figcaption>
-            </figure>
-          </div>
+          <ul class="feature-list">
+            <li class="feature-item">
+              <div class="feature-info">
+                <h3>Custom agent swaps</h3>
+                <p>Go beyond one swap per day. Each extra swap uses 1 credit.</p>
+              </div>
+              <span class="feature-tag">1 CR / swap</span>
+            </li>
+            <li class="feature-item">
+              <div class="feature-info">
+                <h3>Theoretical APY lab</h3>
+                <p>Test and preview a theoretical APY for custom agent settings.</p>
+              </div>
+              <span class="feature-tag">Simulation credits</span>
+            </li>
+            <li class="feature-item">
+              <div class="feature-info">
+                <h3>Advanced Discuss</h3>
+                <p>Ask deeper, more complex questions inside the Discuss tab.</p>
+              </div>
+              <span class="feature-tag">Complex answers</span>
+            </li>
+            <li class="feature-item">
+              <div class="feature-info">
+                <h3>Boosted points</h3>
+                <p>Earn boosted points on Pro so you climb the leaderboard faster.</p>
+              </div>
+              <span class="feature-tag">Pro multiplier</span>
+            </li>
+            <li class="feature-item">
+              <div class="feature-info">
+                <h3>More to come</h3>
+                <p>New Pro drops will unlock with credits as we ship them.</p>
+              </div>
+              <span class="feature-tag">Rolling updates</span>
+            </li>
+          </ul>
         </section>
 
         <section id="pricing" class="section">
@@ -190,11 +149,11 @@
           <h3>Reserve Pro — $10 USDC</h3>
           <button class="dialog-close" type="button" data-close>Close</button>
         </div>
-        <p class="muted">Send $10 in USDC to the EVM address below, then enter your details.</p>
+        <p class="muted">Send $10 in USDC on <strong>Base</strong> to the address below, then enter your details.</p>
         <div class="address-block">
-          <span>EVM address</span>
+          <span>Base address</span>
           <div class="address-row">
-            <code id="evmAddress">0x1111111111111111111111111111111111111111</code>
+            <code id="evmAddress">0xD3CA56e09F9E70D6531F37fd75c47eb8B356D200</code>
             <button class="button ghost copy-button" type="button" data-copy>Copy</button>
           </div>
           <span class="copy-status" aria-live="polite"></span>
