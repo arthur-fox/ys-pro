@@ -309,7 +309,12 @@ body {
 }
 
 .feature-item:first-child {
-  border-top: 1px solid var(--border);
+  padding-top: 0;
+}
+
+.feature-item.last {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .feature-info {
@@ -319,9 +324,9 @@ body {
 
 .feature-info h3 {
   font-family: var(--display);
-  font-weight: 600;
-  font-size: 1rem;
-  margin: 0 0 4px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin: 0 0 6px;
 }
 
 .feature-info p {
@@ -329,15 +334,6 @@ body {
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.5;
-}
-
-.feature-tag {
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  color: var(--muted);
-  letter-spacing: 0.3px;
-  white-space: nowrap;
-  flex-shrink: 0;
 }
 
 /* ── Cards (pricing, FAQ) ── */
