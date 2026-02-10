@@ -536,6 +536,21 @@ body {
   margin-top: 18px;
 }
 
+.dialog-confirm {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.dialog-confirm h3 {
+  font-family: var(--display);
+  font-size: 1.4rem;
+  margin: 0 0 12px;
+}
+
+.dialog-confirm p {
+  margin: 0 0 24px;
+}
+
 /* ── Responsive ── */
 
 @media (max-width: 860px) {
